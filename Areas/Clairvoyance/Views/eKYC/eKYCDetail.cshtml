@@ -43,7 +43,7 @@
 
                     <div style="position:relative;border:0;padding:0;margin:0; width:280px; height:280px ">
                         <canvas id="myChart" width="200" height="200" style="position:absolute; z-index:3"></canvas>
-                        <div style="width: 300px; height: 300px; padding-left:37px;padding-top:58px ">
+                        <div style="width: 300px; height: 300px; padding-left:39px;padding-top:57px ">
                             <img style="width: 200px; height: 200px;" class="img-circle" src="@Html.Raw(customer.IMGSource)" />
                         </div>
 
@@ -117,6 +117,7 @@
                             this.className += " active-btn-selected-0";
                             filter = this.innerText;
                             eKYCDetailList(tabType);
+                            ('#eKYCDetailList').show();
 
                         });
                     }
@@ -204,7 +205,7 @@
                 }
             }
         );
-        $("#eKYCDetailList").html("");
+        $("#eKYCDetailList").hide();
     };
 
     function openValidation(evt, ekyctab) {
@@ -222,7 +223,9 @@
         }
         document.getElementById(ekyctab).style.display = "block";
         evt.currentTarget.className += " active-selected";
+
         eKYCDetailList(ekyctab);
+        $('#eKYCDetailList').show();
         if (ekyctab == "BIO") {
             eKYCDetailBIO();
             $('#HeaderName').text("Biometric Validation");

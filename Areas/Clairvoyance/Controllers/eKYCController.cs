@@ -37,14 +37,14 @@ namespace OneFin.Areas.Clairvoyance.Controllers
 
 
             }
-               
 
 
-
-
-
-
-            return PartialView(custlist);
+            if (custlist.Count == 0)
+            {
+                return Json(new { status = false, message = "Record Not Found" });
+            }
+            else
+             return PartialView(custlist);
         }
 
         public IActionResult eKYCDetailList(string filter, string type, string ekycvalidate)
@@ -440,7 +440,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
                 OV88_LastModifiedDate = "30/11/2021",
-                OV05_TP_TN_FP_FN_Flag = "True Negative",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
             });
@@ -467,7 +467,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
                 OV88_LastModifiedDate = "30/11/2021",
-                OV05_TP_TN_FP_FN_Flag = "True Negative",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
             });

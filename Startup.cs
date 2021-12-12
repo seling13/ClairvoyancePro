@@ -39,16 +39,16 @@ namespace OneFin
 
             services.Configure<CFServiceSettings>(Configuration.GetSection(nameof(CFServiceSettings)));
 
-            services.AddDbContext<AppDbContext>(opt =>
-                                                opt.UseSqlServer(Configuration.GetConnectionString("OneFin")));
-            services.AddDbContext<IdentityDbContext>(opt =>
-                                    opt.UseSqlServer(Configuration.GetConnectionString("OneFin")));
-
-
             //services.AddDbContext<AppDbContext>(opt =>
-            //                       opt.UseInMemoryDatabase("CustomerMaster"));
-            //services.AddDbContext<IdentityContext>(opt =>
-            //                       opt.UseInMemoryDatabase("CustomerMaster"));
+            //                                    opt.UseSqlServer(Configuration.GetConnectionString("OneFin")));
+            //services.AddDbContext<IdentityDbContext>(opt =>
+            //                        opt.UseSqlServer(Configuration.GetConnectionString("OneFin")));
+
+
+            services.AddDbContext<AppDbContext>(opt =>
+                                   opt.UseInMemoryDatabase("CustomerMaster"));
+            services.AddDbContext<IdentityDbContext>(opt =>
+                                   opt.UseInMemoryDatabase("CustomerMaster"));
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 

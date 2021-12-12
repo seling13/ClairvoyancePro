@@ -11,7 +11,7 @@ using PagedList;
 
 namespace OneFin.Controllers
 {
-    //[Authorize(Roles = "Admir,"")]
+    //[Authorize(Roles = "Admin,"")]
     [Authorize]
     [Area("Configuration")]
 

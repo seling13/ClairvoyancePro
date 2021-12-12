@@ -128,23 +128,23 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.EmploymentUniformPublicSectorContentList)
+            @foreach (var item in Model.EmploymentSemiGovernmentSectorContentList)
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.US03_UniformCode_FPUF)
+                        @Html.DisplayFor(modelItem => item.SS03_semiGovernment)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.US04_StartDate)
+                        @Html.DisplayFor(modelItem => item.SS04_startDate)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.US05_EndDate)
+                        @Html.DisplayFor(modelItem => item.SS05_endDate)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.US87_UserID)
+                        @Html.DisplayFor(modelItem => item.SS87_userID)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.US88_UpdateDate)
+                        @Html.DisplayFor(modelItem => item.SS88_updateDate)
                     </td>
 
                 </tr>

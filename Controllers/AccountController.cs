@@ -73,8 +73,8 @@ namespace OneFin.Controllers
 
                 //var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
                 //return Json(new { status = true, message = "Login Successfull!" });
-                var users = await _userManager.FindByNameAsync(loginInput.userName);
-                var roles = await _userManager.GetRolesAsync(users);
+                //var users = await _userManager.FindByNameAsync(loginInput.userName);
+                //var roles = await _userManager.GetRolesAsync(users);
 
                 return RedirectToAction("eKYCSearch", "eKYC", new { area = "Clairvoyance" });
             }

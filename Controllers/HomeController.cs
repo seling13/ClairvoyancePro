@@ -11,7 +11,7 @@ using OneFin.Struct.Dashboard;
 
 namespace OneFin.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class HomeController : Controller
     {
         private readonly AppDbContext _db;
