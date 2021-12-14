@@ -160,6 +160,13 @@
         document.getElementById("myForm").style.paddingTop = "10%";
         $("#myForm").load("eKYCRegisteredHistory")
     };
+    function PopupOTP(type) {
+    //$("#myForm").load("CustomerLKOverride", { LKOverride: data });
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("myForm").style.display = "block";
+    document.getElementById("myForm").style.paddingTop = "10%";
+    $("#myForm").load("eKYCOTPHistory")
+    };
 
 
     function closeFormHistory() {

@@ -255,3 +255,4 @@ C:\projects\OneFin.core\obj\Debug\net5.0\Razor\Areas\Clairvoyance\Views\eKYC\eKY
 C:\projects\OneFin.core\obj\Debug\net5.0\Razor\Areas\Clairvoyance\Views\eKYC\eKYCDetailRelationship.cshtml.g.cs
 C:\projects\OneFin.core\obj\Debug\net5.0\OneFin.csproj.AssemblyReference.cache
 C:\projects\OneFin.core\obj\Debug\net5.0\Razor\Areas\Clairvoyance\Views\eKYC\eKYCRegisteredHistory.cshtml.g.cs
+C:\projects\OneFin.core\obj\Debug\net5.0\Razor\Areas\Clairvoyance\Views\eKYC\eKYCOTPHistory.cshtml.g.cs

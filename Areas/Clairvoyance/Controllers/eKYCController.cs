@@ -781,6 +781,11 @@ namespace OneFin.Areas.Clairvoyance.Controllers
         {
             return PartialView();
         }
-            
+
+        public IActionResult eKYCOTPHistory()
+        {
+            return PartialView();
+        }
+
     }
 }
