@@ -8012,9 +8012,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\OneFin.core\\OneFin.csproj",
-      "projectName": "OneFin",
-      "projectPath": "C:\\projects\\OneFin.core\\OneFin.csproj",
+      "projectUniqueName": "C:\\projects\\OneFin.core\\ClairvoyancePro.csproj",
+      "projectName": "ClairvoyancePro",
+      "projectPath": "C:\\projects\\OneFin.core\\ClairvoyancePro.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\projects\\OneFin.core\\obj\\",
       "projectStyle": "PackageReference",

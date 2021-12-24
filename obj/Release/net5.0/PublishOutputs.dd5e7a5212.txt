@@ -1,4 +1,4 @@
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.exe
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.exe
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\dist\css\bootstrap-theme.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\dist\css\bootstrap-theme.css.map
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\dist\css\bootstrap-theme.min.css
@@ -20,6 +20,7 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fo
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fonts\glyphicons-halflings-regular.woff
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fonts\glyphicons-halflings-regular.woff2
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart - Copy.min.js
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\gulpfile.js
@@ -218,11 +219,21 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jq
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.map
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\brunei-DL_659x580.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\Datin Leng.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\denzel.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\images.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\Jason Lee.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\John Wick.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\payslip.jpg
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\SampleID-BACK.png
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\SampleID.png
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\sampleimg\Unknown.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\appsettings.json
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.dll
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.runtimeconfig.json
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.pdb
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.dll
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.runtimeconfig.json
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.pdb
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\AutoMapper.dll
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\EntityFramework.SqlServer.dll
@@ -355,6 +366,6 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\runtimes\unix\lib\netcorea
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.Views.dll
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.Views.pdb
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\OneFin.deps.json
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.Views.dll
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.Views.pdb
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\ClairvoyancePro.deps.json

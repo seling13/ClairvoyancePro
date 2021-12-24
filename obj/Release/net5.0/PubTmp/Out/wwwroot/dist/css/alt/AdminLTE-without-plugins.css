@@ -206,6 +206,7 @@ a:focus {
 .main-header #navbar-search-input.form-control {
   background: rgba(255, 255, 255, 0.2);
   border-color: transparent;
+   border-radius: 10px;
 }
 .main-header #navbar-search-input.form-control:focus,
 .main-header #navbar-search-input.form-control:active {
@@ -1235,7 +1236,7 @@ a:focus {
  * ---------------
  */
 .form-control {
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   border-color: #d2d6de;
 }

@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["OneFin.csproj", "."]
-RUN dotnet restore "./OneFin.csproj"
+COPY ["ClairvoyancePro.csproj", "."]
+RUN dotnet restore "ClairvoyancePro.csproj"
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "OneFin.csproj" -c Release -o /app/build
+WORKDIR "/src/"
+RUN dotnet build "ClairvoyancePro.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "OneFin.csproj" -c Release -o /app/publish
+RUN dotnet publish "ClairvoyancePro.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "OneFin.dll"]
+ENTRYPOINT ["dotnet", "ClairvoyancePro.dll"]
