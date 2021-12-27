@@ -190,6 +190,21 @@
     $("#myForm").load("eKYCOTPHistory")
     };
 
+    function PopupImage(URL) {
+        //$("#myForm").load("CustomerLKOverride", { LKOverride: data });
+        var src = '<img style="width: 210px; height: 210px; " class="img - circle" src=' + '"' + URL + '"' +'/>';
+        alert(src);
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("myForm").style.paddingTop = "10%";
+        $("#myForm").html(src)
+        var modal = document.getElementById('myForm');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                closeFormHistory();
+            }
+        }
+    };
 
     function closeFormHistory() {
         document.getElementById("overlay").style.display = "none";
