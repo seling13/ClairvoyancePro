@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tAf5fbvp3LuwT5mjB9YbNTMDDcSy/doeDNiyD3ESpivjfFKRZZCj4T5EfiifRKpxmls1RVCGO+NvGfe6Mt6hog==",
+  "dgSpecHash": "FHX6h1hlzoFpqSFy60KcPOFUimW0iQb0s3FSnRXQS1If/9x3cDTk6bv2YUweEVwaA/9eOWVj7I7CkPUDCKiVrQ==",
   "success": true,
-  "projectFilePath": "C:\\projects\\OneFin.core\\ClairvoyancePro.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\ClairvoyancePro\\ClairvoyancePro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

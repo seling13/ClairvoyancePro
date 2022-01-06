@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_clairvoyancepro$
     volumes:
-      - C:\projects\OneFin.core:/app
-      - C:\projects\OneFin.core:/src
+      - C:\Users\User\Documents\GitHub\ClairvoyancePro:/app
+      - C:\Users\User\Documents\GitHub\ClairvoyancePro:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_clairvoyancepro$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
