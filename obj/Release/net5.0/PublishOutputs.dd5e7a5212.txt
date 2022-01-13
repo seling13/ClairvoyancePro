@@ -21,6 +21,7 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fo
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fonts\glyphicons-halflings-regular.woff2
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart - Copy.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut.js
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut_bak.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\gulpfile.js
@@ -73,6 +74,46 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\font-awesome
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\font-awesome\scss\_screen-reader.scss
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\font-awesome\scss\_stacked.scss
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\font-awesome\scss\_variables.scss
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Black.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Black.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-BlackItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-BlackItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Bold.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Bold.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-BoldItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-BoldItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraBold.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraBold.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraBoldItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraBoldItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraLight.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraLight.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraLightItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ExtraLightItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-italic.var.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Italic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Italic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Light.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Light.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-LightItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-LightItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Medium.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Medium.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-MediumItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-MediumItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Regular.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Regular.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-roman.var.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-SemiBold.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-SemiBold.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-SemiBoldItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-SemiBoldItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Thin.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-Thin.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ThinItalic.woff
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter-ThinItalic.woff2
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\inter.css
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\inter\Inter.var.woff2
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\Ionicons\css\ionicons.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\Ionicons\css\ionicons.min.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\jquery\dist\core.js
@@ -92,6 +133,10 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\raphael\raph
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\raphael\raphael.no-deps.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\raphael\webpack.config.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\AdminLTE - Copy.css
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\adminlte - Copy.css.map
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\AdminLTE - Copy.min.css
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\adminlte - Copy.min.css.map
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\AdminLTE.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\adminlte.css.map
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\AdminLTE.min.css
@@ -154,17 +199,20 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\pa
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\paypal2.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\visa.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\default-50x50.gif
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\exponential.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\favicon.ico
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\faviconLarge.ico
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\icons.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\Login_background.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\Login_background.webp
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\onefin-logo.png
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\others.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\photo1.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\photo2.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\photo3.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\photo4.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\robot.png
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\Ultron.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\user1-128x128.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\user2-160x160.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\user3-128x128.jpg

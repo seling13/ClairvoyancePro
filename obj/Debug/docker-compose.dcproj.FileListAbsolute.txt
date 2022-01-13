@@ -12,12 +12,9 @@ C:\projects\Dotnet5\OneFin\obj\Debug\docker-compose.dcproj.AssemblyReference.cac
 C:\projects\Dotnet5\OneFin\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\projects\Dotnet5\OneFin\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\projects\OneFin.core\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\projects\OneFin.core\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\projects\OneFin.core\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\projects\OneFin.core\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\projects\OneFin.core\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-C:\projects\OneFin.core\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\projects\OneFin.core\bin\Debug\Microsoft.Data.SqlClient.dll
 C:\projects\OneFin.core\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\projects\OneFin.core\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\projects\OneFin.core\bin\Debug\ClairvoyancePro.Views.dll

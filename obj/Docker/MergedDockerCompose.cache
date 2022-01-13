@@ -1,7 +1,7 @@
 services:
   clairvoyancepro:
     build:
-      context: C:\Users\User\Documents\GitHub\ClairvoyancePro
+      context: C:\projects\OneFin.core
       dockerfile: Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development

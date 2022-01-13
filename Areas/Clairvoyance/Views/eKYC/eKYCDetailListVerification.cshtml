@@ -2,9 +2,14 @@
 
 
 <style>
+    .img-cp {
+        width: 27px; 
+        height: 27px;
+        margin-top:-10px;
+    }
     .img-cp:hover {
         position:absolute;
-        transform: scale(3.5);
+        transform: scale(5);
         -webkit-transition-duration: 1s;
         -moz-transition-duration: 1s;
         -o-transition-duration: 1s;
@@ -37,14 +42,14 @@
                 <tbody>
 
                     <tr>
-                        <td>
+                        <td >
                             @Html.Raw(Model.NA03_expectedVariableName1)
                         </td>
                         <td>
                             <script>
                                 if ('@Html.Raw(Model.NA03_expectedVariableName1)' == "Transaction Avatar URL") {
 
-                                    document.getElementById('NA04_expectedVariableAttribute1').innerHTML = '<img style="width: 50px; height: 50px; " class="img-circle img-cp" src="@Html.Raw(Model.NA04_expectedVariableAttribute1)" />'
+                                    document.getElementById('NA04_expectedVariableAttribute1').innerHTML = '<img  class="img-circle img-cp" src="@Html.Raw(Model.NA04_expectedVariableAttribute1)" />'
                                     //document.getElementById('NA03_expectedVariableName1').innerHTML = '<img href="#" onclick="PopupDetail('Addres')" style="width: 50px; height: 50px;" class="img-circle" src="@Html.Raw(Model.NA04_expectedVariableAttribute1)" /> '
                                 }
                                 else {
@@ -58,7 +63,7 @@
                             <a href="http://SOURCE_URL" target="_blank">@Html.Raw(Model.NA05_expectedVariableSource1) </a>
                         </td>
                         <td>
-                            @Html.Raw(Model.NA88_LastModifiedDate)
+                            30-NOV-21
                         </td>
                     </tr>
                     <tr>
@@ -83,7 +88,7 @@
                             <script>
                              if ('@Html.Raw(Model.NA09_expectedVariableName3)' == "Profile Image") {
 
-                                 document.getElementById('NA10_expectedVariableAttribute3').innerHTML = '<img style="width: 50px; height: 50px;" class="img-circle img-cp" src="@Html.Raw(Model.NA10_expectedVariableAttribute3)" />'
+                                 document.getElementById('NA10_expectedVariableAttribute3').innerHTML = '<img  class="img-circle img-cp" src="@Html.Raw(Model.NA10_expectedVariableAttribute3)" />'
                             }
                             else {
                                  document.getElementById('NA10_expectedVariableAttribute3').innerText =  '@Html.Raw(Model.NA10_expectedVariableAttribute3)';
@@ -149,17 +154,17 @@
                         <td>
                             <script>
                     if ('@Html.Raw(Model.DV07_passOrFail)' == "FAIL") {
-                        $("#DV07_passOrFailV").addClass("fa fa-close");
+                        $("#DV07_passOrFailV").addClass("fa fa-circle");
                         document.getElementById('DV07_passOrFailV').style.color = "red";
                     }
 
                     if ('@Html.Raw(Model.DV07_passOrFail)' == "PASS") {
-                        $("#DV07_passOrFailV").addClass("fa fa-check-circle");
+                        $("#DV07_passOrFailV").addClass("fa fa-fa fa-circle");
                         document.getElementById('DV07_passOrFailV').style.color = "green";
                     }
                             </script>
-                            <i id="DV07_passOrFailV"></i> @Html.Raw(Model.DV07_passOrFail)
-                        </td>
+                            <div style="display:flex; align-items:center; justify-content:center"><i id="DV07_passOrFailV"style="font-size:12px; padding-right:8px"></i> @Html.Raw(Model.DV07_passOrFail)</div>
+</td>
                         <td>
                             @Html.Raw(Model.DV08_deviationRemark)
                         </td>
@@ -202,7 +207,7 @@
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr >
                         <td>
                             @Html.Raw(Model.OV03_overrideFlag)
                         </td>
@@ -222,45 +227,56 @@
                             @Html.Raw(Model.OV88_LastModifiedDate)
                         </td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td>
-                            <select class="form-control" id="OV03_overrideFlag" required style="min-width: 150px;">
-                                <option value="">Choose here</option>
-                                <option value="YES">YES</option>
-                                <option value="NO">NO</option>
-                            </select>
+                            <div class="select">
+                                <select class="form-control field-full" id="OV03_overrideFlag" required>
+                                    <option value="">Choose here</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                                </div>
                         </td>
                         <td>
                             <input class="form-control" required style="min-width:300px" />
                         </td>
                         <td>
-                            <select class="form-control" id="OV05_TP_TN_FP_FN_Flag" required style="min-width:300px">
-                                <option value="">Choose here</option>
-                                <option value="TRUE NEGATIVE">TRUE NEGATIVE</option>
-                                <option value="FALSE NEGATIVE">FALSE NEGATIVE</option>
-                                <option value="TRUE POSITIVE">TRUE POSITIVE</option>
-                                <option value="FALSE POSITIVE">FALSE POSITIVE</option>
-                            </select>
+                            <div class="select" style="width:200px">
+                                <select class="form-control field-full" id="OV05_TP_TN_FP_FN_Flag"   required >
+                                    <option value="">Choose here</option>
+                                    <option value="TRUE NEGATIVE">TRUE NEGATIVE</option>
+                                    <option value="FALSE NEGATIVE">FALSE NEGATIVE</option>
+                                    <option value="TRUE POSITIVE">TRUE POSITIVE</option>
+                                    <option value="FALSE POSITIVE">FALSE POSITIVE</option>
+                                </select>
+                                </div>
                         </td>
                         <td>
-                            <select class="form-control" id="OV06_overrideStatus" required style="min-width:200px">
-                                <option value="">Choose here</option>
-                                <option value="APPROVED">APPROVED</option>
-                                <option value="DECLINED">DECLINED</option>
-                            </select>
+                            <div class="select"  style="width:200px">
+                                <select class="form-control field-full" id="OV06_overrideStatus" required >
+                                    <option value="">Choose here</option>
+                                    <option value="APPROVED">APPROVED</option>
+                                    <option value="DECLINED">DECLINED</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td >
+                            <div style="margin-top:7px">
+                                Ridzuan
+                            </div>
                         </td>
                         <td>
-                            Ridzuan
-                        </td>
-                        <td>
-                            @Html.Raw(Model.OV88_LastModifiedDate)
+                            <div style="margin-top:7px">
+                                30-NOV-21
+
+                            </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="box-footer" style="margin-top:50px">
-                <button type="submit" class="btn-rounded btn-info">Save</button>
-                <button type="button" onclick="ValidateCancel('@ViewBag.type')" class="btn-rounded btn-info">Cancel</button>
+                <button type="submit" class="btn-cp">Save</button>
+                <button type="button" onclick="ValidateCancel('@ViewBag.type')" class="btn-cp ">Cancel</button>
             </div>
         </form>
     </div>

@@ -116,25 +116,25 @@ namespace OneFin.Areas.Clairvoyance.Controllers
             cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "KAYANGAN", TP05_jalan_FPJC = "3", TP06_simpang_FPSM = "1", TP07_block = "", TP08_unit = "", TP09_postalCode_FPPK = "BA1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "", TP13_building_FPBG = "",RegHist="1" });
             cust.AddContentList.AddRange(cfaddresslist);
 
-            cfphonelist.Add(new CFPhone { PH03_phoneNumber= "45454545",PH04_phoneType_FPTL= "HOME", PH05_source="MIBS", PH06_startDate="05 - JUL - 21 00:00:00",PH07_EndDate="", PH87_userID="TESTING USER", PH88_lastUpdate="05-JUL-21 12:42:45", RegHist="2",OTPHist= "0" });
-            cfphonelist.Add(new CFPhone { PH03_phoneNumber = "8785628", PH04_phoneType_FPTL = "MOBILE", PH05_source = "CREDIT BUREAU", PH06_startDate = "10 - JUL - 21 00:00:00", PH07_EndDate = "", PH87_userID = "TESTING USER", PH88_lastUpdate = "05-JUL-21 12:42:45", RegHist = "1", OTPHist = "3" });
+            cfphonelist.Add(new CFPhone { PH03_phoneNumber= "45454545",PH04_phoneType_FPTL= "HOME", PH05_source="MIBS", PH06_startDate="05-JUL-21 ",PH07_EndDate="", PH87_userID="TESTING USER", PH88_lastUpdate="05-JUL-21 ", RegHist="2",OTPHist= "0" });
+            cfphonelist.Add(new CFPhone { PH03_phoneNumber = "8785628", PH04_phoneType_FPTL = "MOBILE", PH05_source = "CREDIT BUREAU", PH06_startDate = "10-JUL-21 ", PH07_EndDate = "", PH87_userID = "TESTING USER", PH88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
             cust.PhoneContentList.AddRange(cfphonelist);
             /*Mock Contact*/
 
-            cfemaillist.Add(new CFEmail { EM03_emailAddress = "james@gmail.com", EM06_source = "MIBS", EM04_startDate = "05 - JUL - 21 00:00:00", EM05_endDate = "", EM87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 12:42:45" });
-            cfemaillist.Add(new CFEmail { EM03_emailAddress = "jameslee@gmail.com", EM06_source = "MOBILE",  EM04_startDate = "10 - JUL - 21 00:00:00", EM05_endDate = "", PH87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 12:42:45"});
+            cfemaillist.Add(new CFEmail { EM03_emailAddress = "james@gmail.com", EM06_source = "MIBS", EM04_startDate = "05-JUL-21 ", EM05_endDate = "", EM87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3"  });
+            cfemaillist.Add(new CFEmail { EM03_emailAddress = "jameslee@gmail.com", EM06_source = "MOBILE",  EM04_startDate = "10-JUL-21 ", EM05_endDate = "", PH87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
             cust.EmailContentList.AddRange(cfemaillist);
 
-            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "james@gmail.com", SM03_socialMediaType_FKXX = "INSTAGRAM", SM05_startDate = "05 - JUL - 21 00:00:00", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 12:42:45" });
-            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "jameslee@gmail.com", SM03_socialMediaType_FKXX = "LINKEIN", SM05_startDate = "10 - JUL - 21 00:00:00", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 12:42:45" });
+            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "james@gmail.com", SM03_socialMediaType_FKXX = "INSTAGRAM", SM05_startDate = "05-JUL-21 ", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 " });
+            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "jameslee@gmail.com", SM03_socialMediaType_FKXX = "LINKEIN", SM05_startDate = "10-JUL-21 ", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 " });
             cust.SocialMediaContentList.AddRange(cfsocialmedialist);
 
-            cfemploymentcivilianpublicsectorlist.Add(new CFEmploymentCivilianPublicSector { CS03_ministryCode_FPMT= "45454545", CS04_startDate= "05-JUL-21 00:00:00", CS05_endDate="",CS87_updatedBy= "TESTING USER", CS88_lastModifiedDate= "05-JUL-21 12:42:45" });
-            cfemploymentuniformpublicsectorlist.Add(new CFEmploymentUniformPublicSector { US03_UniformCode_FPUF = "1166111", US04_StartDate = "05-JUL-21 00:00:00", US05_EndDate = "", US87_UserID = "TESTING USER", US88_UpdateDate = "05-JUL-21 12:42:45" });
-            cfemploymentsemigovernmentsectorlist.Add(new CFEmploymentSemiGovernmentSector { SS03_semiGovernment = "WaterBoard", SS04_startDate = "05-JUL-21 00:00:00",  SS05_endDate= "", SS87_userID = "TESTING USER",  SS88_updateDate= "05-JUL-21 12:42:45" });
-            cfemploymentprivatesectolist.Add(new CFEmploymentPrivateSector { PS03_privateCompany = "Super 888 Company", PS04_startDate = "05-JUL-21 00:00:00", PS05_endDate = "", PS87_userID = "TESTING USER", PS88_updateDate = "05-JUL-21 12:42:45" });
-            cfemploymentselfemployedlist.Add(new CFEmploymentSelfEmployed { BH04_companyName_FPPV = "ANT Company", BH05_businessStartDate = "05-JUL-20 00:00:00", BH06_businessEndDate = "", BH87_UserID = "TESTING USER", BH88_UpdateDate = "05-JUL-21 12:42:45" });
-            cfunemployed.Add(new CFUnemployed { UH03_unemploymentType_FPUT = "Housewife", UH04_StartDate = "05-JUL-19 00:00:00", UH05_EndDate = "", UH87_UserID = "TESTING USER", UH88_UpdateDate = "05-JUL-21 12:42:45" });
+            cfemploymentcivilianpublicsectorlist.Add(new CFEmploymentCivilianPublicSector { CS03_ministryCode_FPMT= "45454545", CS04_startDate= "05-JUL-21 ", CS05_endDate="",CS87_updatedBy= "TESTING USER", CS88_lastModifiedDate= "05-JUL-21 " });
+            cfemploymentuniformpublicsectorlist.Add(new CFEmploymentUniformPublicSector { US03_UniformCode_FPUF = "1166111", US04_StartDate = "05-JUL-21 ", US05_EndDate = "", US87_UserID = "TESTING USER", US88_UpdateDate = "05-JUL-21 " });
+            cfemploymentsemigovernmentsectorlist.Add(new CFEmploymentSemiGovernmentSector { SS03_semiGovernment = "WaterBoard", SS04_startDate = "05-JUL-21 ",  SS05_endDate= "", SS87_userID = "TESTING USER",  SS88_updateDate= "05-JUL-21 " });
+            cfemploymentprivatesectolist.Add(new CFEmploymentPrivateSector { PS03_privateCompany = "Super 888 Company", PS04_startDate = "05-JUL-21 ", PS05_endDate = "", PS87_userID = "TESTING USER", PS88_updateDate = "05-JUL-21 " });
+            cfemploymentselfemployedlist.Add(new CFEmploymentSelfEmployed { BH04_companyName_FPPV = "ANT Company", BH05_businessStartDate = "05-JUL-20 ", BH06_businessEndDate = "", BH87_UserID = "TESTING USER", BH88_UpdateDate = "05-JUL-21 " });
+            cfunemployed.Add(new CFUnemployed { UH03_unemploymentType_FPUT = "Housewife", UH04_StartDate = "05-JUL-19 ", UH05_EndDate = "", UH87_UserID = "TESTING USER", UH88_UpdateDate = "05-JUL-21 " });
 
 
             cust.EmploymentCivilianPublicSectorContentList.AddRange(cfemploymentcivilianpublicsectorlist);
@@ -153,8 +153,8 @@ namespace OneFin.Areas.Clairvoyance.Controllers
             cfyincome.Add(new CFYIncome { AI05_incomeCat_FPSU = "Employment", AI04_YYYY = "2020", AI03_annualIncome = "$1,000,000" });
             cust.YIncomeContentList.AddRange(cfyincome);
 
-            cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName= "MARJINA",SU05_relationshipType_FPRE= "SPOUSE",SU06_relationshipStatus="Valid", SU07_startDate= "05-JUL-19 00:00:00", SU08_endDate="", SU87_updatedBy="RIHINAH",SU88_lastModifiedDate="" });
-            cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName = "KASIM", SU05_relationshipType_FPRE = "BIOLOGICAL CHILD", SU06_relationshipStatus = "Valid", SU07_startDate = "05-JUL-19 00:00:00", SU08_endDate = "", SU87_updatedBy = "", SU88_lastModifiedDate = "" });
+            //cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName= "MARJINA",SU05_relationshipType_FPRE= "SPOUSE",SU06_relationshipStatus="Valid", SU07_startDate= "05-JUL-19 ", SU08_endDate="", SU87_updatedBy="RIHINAH",SU88_lastModifiedDate="" });
+            cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName = "THIRD CHILD BIN MD ARNEY FAIZUL", SU05_relationshipType_FPRE = "BIOLOGICAL CHILD", SU06_relationshipStatus = "Valid", SU07_startDate = "05-JUL-19 ", SU08_endDate = "", SU87_updatedBy = "TESTING USER", SU88_lastModifiedDate = "05-JUL-21" });
 
 
             cust.RelationshipContentList.AddRange(cfrelationship);
@@ -183,8 +183,9 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA08_expectedVariableSource2= "View Source",
                 NA09_expectedVariableName3 = "Profile Image",
                 NA10_expectedVariableAttribute3 = cust.IMGSource,
+                //cust.IMGSource,
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "30-NOV-21 01:34:00",
+                NA88_LastModifiedDate = "30-NOV-21",
                 OV03_overrideFlag = "",
                 OV04_overrideRemark = "",
                 OV87_UpdatedBy = "",
@@ -211,7 +212,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Profile Image",
                 NA10_expectedVariableAttribute3 = cust.IMGSource,
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "30-NOV-21 01:34:00",
+                NA88_LastModifiedDate = "30-NOV-21",
                 OV03_overrideFlag = "",
                 OV04_overrideRemark = "",
                 OV87_UpdatedBy = "",
@@ -238,11 +239,11 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Profile Image",
                 NA10_expectedVariableAttribute3 = cust.IMGSource,
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "30-NOV-21 01:34:00",
+                NA88_LastModifiedDate = "30-NOV-21",
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Verified Correct",
                 OV87_UpdatedBy = "Rafhanah",
-                OV88_LastModifiedDate = "30-NOV-21 01:34:00",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "FALSE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -265,7 +266,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Profile Image",
                 NA10_expectedVariableAttribute3 = cust.IMGSource,
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "30-NOV-21 01:34:00",
+                NA88_LastModifiedDate = "30-NOV-21",
                 OV03_overrideFlag = "",
                 OV04_overrideRemark = "",
                 OV87_UpdatedBy = "",
@@ -356,7 +357,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Verified Correct",
                 OV87_UpdatedBy = "Rafhanah",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "FALSE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -412,7 +413,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -439,7 +440,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -466,7 +467,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -522,7 +523,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Contacted the number, belongs to Qays Matin. Delink phone no to Deana.",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -532,8 +533,8 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 eKYCType = "Contact", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
                 DV01_lkbmdvIndex = "008",
                 DV03_ruleID = "CONTACT6",
-                DV04_ruleName = "At least one OTP",
-                DV05_ruleDescription = "Email x OTP",
+                DV04_ruleName = "Email x OTP",
+                DV05_ruleDescription = "At least one OTP",
                 DV07_passOrFail = "FAIL",
                 DV09_recommendation = "Please verify the email by sending the verification link",
                 NA03_expectedVariableName1 = "MOBILE NUMBER",
@@ -549,7 +550,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Contacted the number, belongs to Qays Matin. Delink phone no to Deana.",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -576,7 +577,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Contacted the number, belongs to Qays Matin. Delink phone no to Deana.",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -588,16 +589,16 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 eKYCType = "Employment", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
                 DV01_lkbmdvIndex = "009",
                 DV03_ruleID = "EMPLOYMENT17",
-                DV04_ruleName = "Employment Record Present",
-                DV05_ruleDescription = "At Least One Valid Employment Record Present",
+                DV04_ruleName = "Vocation is Present",
+                DV05_ruleDescription = "Check Employment Sector is Not Missing or Expired",
                 DV07_passOrFail = "FAIL",
-                DV09_recommendation = "Verify that the customer has at least one valid employment record",
-                NA03_expectedVariableName1 = "Employment Record Present",
-                NA04_expectedVariableAttribute1 = "8785628",
+                DV09_recommendation = "Please update latest employment status",
+                NA03_expectedVariableName1 = "Employment Sector",
+                NA04_expectedVariableAttribute1 = "MISSING",
                 NA05_expectedVariableSource1 = "View Source",
-                NA06_expectedVariableName2 = "",
-                NA07_expectedVariableAttribute2 = "",
-                NA08_expectedVariableSource2 = "",
+                NA06_expectedVariableName2 = "End Date",
+                NA07_expectedVariableAttribute2 = "NULL",
+                NA08_expectedVariableSource2 = "View Source",
                 NA09_expectedVariableName3 = "",
                 NA10_expectedVariableAttribute3 = "",
                 NA11_expectedVariableSource3 = "",
@@ -605,7 +606,88 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "At Least One Valid Employment Record Present",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Employment", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "010",
+                DV03_ruleID = "EMPLOYMENT17",
+                DV04_ruleName = "Army ID vs Employment",
+                DV05_ruleDescription = "Check for army ID or employment details",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please upload ID or update employment details",
+                NA03_expectedVariableName1 = "Employment Sector",
+                NA04_expectedVariableAttribute1 = "MISSING",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "End Date",
+                NA07_expectedVariableAttribute2 = "NULL",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "At Least One Valid Employment Record Present",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Employment", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "011",
+                DV03_ruleID = "EMPLOYMENT17",
+                DV04_ruleName = "Unemployed and No Income Credited",
+                DV05_ruleDescription = "Check Employment Sector = “UNEMPLOYED”",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please update latest employment status",
+                NA03_expectedVariableName1 = "Employment Sector",
+                NA04_expectedVariableAttribute1 = "MISSING",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "End Date",
+                NA07_expectedVariableAttribute2 = "NULL",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "At Least One Valid Employment Record Present",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Employment", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "012",
+                DV03_ruleID = "EMPLOYMENT17",
+                DV04_ruleName = "Age > 60 and Pension",
+                DV05_ruleDescription = "Check Age > “60” but Employment Status <> PENSION",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please update pension status",
+                NA03_expectedVariableName1 = "Employment Sector",
+                NA04_expectedVariableAttribute1 = "MISSING",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "End Date",
+                NA07_expectedVariableAttribute2 = "NULL",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "At Least One Valid Employment Record Present",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -617,16 +699,16 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 eKYCType = "Income", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
                 DV01_lkbmdvIndex = "009",
                 DV03_ruleID = "INCOME01",
-                DV04_ruleName = "Much Income",
-                DV05_ruleDescription = "Income with unreasonable amount",
+                DV04_ruleName = "Pension vs Employment Sector",
+                DV05_ruleDescription = "Check Pension Income vs Employment Sector",
                 DV07_passOrFail = "FAIL",
-                DV09_recommendation = "Verify customer Income",
-                NA03_expectedVariableName1 = "Income",
-                NA04_expectedVariableAttribute1 = "$1,000,000,000",
+                DV09_recommendation = "Please update pension status",
+                NA03_expectedVariableName1 = "Total Monthly Income",
+                NA04_expectedVariableAttribute1 = "$800.00",
                 NA05_expectedVariableSource1 = "View Source",
-                NA06_expectedVariableName2 = "",
-                NA07_expectedVariableAttribute2 = "",
-                NA08_expectedVariableSource2 = "",
+                NA06_expectedVariableName2 = "Current Employment Sector",
+                NA07_expectedVariableAttribute2 = "CIVILIAN PUBLIC SECTOR",
+                NA08_expectedVariableSource2 = "View Source",
                 NA09_expectedVariableName3 = "",
                 NA10_expectedVariableAttribute3 = "",
                 NA11_expectedVariableSource3 = "",
@@ -634,7 +716,91 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Verify customer Income",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Income", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "010",
+                DV03_ruleID = "INCOME01",
+                DV04_ruleName = "Income is Present",
+                DV05_ruleDescription = "Check Salary Credited in the Last 45 Days",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please validate if still employed",
+                NA03_expectedVariableName1 = "Total Monthly Income",
+                NA04_expectedVariableAttribute1 = "$800.00",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "Current Employment Sector",
+                NA07_expectedVariableAttribute2 = "CIVILIAN PUBLIC SECTOR",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "Verify customer Income",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Income", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "011",
+                DV03_ruleID = "INCOME01",
+                DV04_ruleName = "Check for Salary Income Supporting Document",
+                DV05_ruleDescription = "Check Supporting Document for Manual Input Salary Income",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please submit salary payslip or account statement",
+                NA03_expectedVariableName1 = "Total Monthly Income",
+                NA04_expectedVariableAttribute1 = "$800.00",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "Current Employment Sector",
+                NA07_expectedVariableAttribute2 = "CIVILIAN PUBLIC SECTOR",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "Verify customer Income",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
+
+            });
+
+            ekyclist.Add(new eKYCValidate
+            {
+                eKYCType = "Income", //ekyctab:BIO/Address/ID/Contact/Employment/Income/Relationship
+                DV01_lkbmdvIndex = "012",
+                DV03_ruleID = "INCOME01",
+                DV04_ruleName = "Check for Pension Income Supporting Document",
+                DV05_ruleDescription = "Check Supporting Document for Manual Input Pension Income",
+                DV07_passOrFail = "FAIL",
+                DV09_recommendation = "Please submit pension confirmation slip or account statement",
+                NA03_expectedVariableName1 = "Total Monthly Income",
+                NA04_expectedVariableAttribute1 = "$800.00",
+                NA05_expectedVariableSource1 = "View Source",
+                NA06_expectedVariableName2 = "Current Employment Sector",
+                NA07_expectedVariableAttribute2 = "CIVILIAN PUBLIC SECTOR",
+                NA08_expectedVariableSource2 = "View Source",
+                NA09_expectedVariableName3 = "",
+                NA10_expectedVariableAttribute3 = "",
+                NA11_expectedVariableSource3 = "",
+                NA88_LastModifiedDate = "",
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "Verify customer Income",
+                OV87_UpdatedBy = "RIHANA",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -663,7 +829,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Verify customer Income",
                 OV87_UpdatedBy = "RIHANA",
-                OV88_LastModifiedDate = "30/11/2021",
+                OV88_LastModifiedDate = "30-NOV-21",
                 OV05_TP_TN_FP_FN_Flag = "TRUE NEGATIVE",
                 OV06_overrideStatus = "APPROVED"
 
@@ -785,6 +951,11 @@ namespace OneFin.Areas.Clairvoyance.Controllers
         public IActionResult eKYCOTPHistory()
         {
             return PartialView();
+        }
+
+        public IActionResult VueJSSample()
+        {
+            return View();
         }
 
     }

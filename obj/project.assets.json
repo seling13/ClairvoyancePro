@@ -8012,11 +8012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ClairvoyancePro\\ClairvoyancePro.csproj",
+      "projectUniqueName": "C:\\projects\\OneFin.core\\ClairvoyancePro.csproj",
       "projectName": "ClairvoyancePro",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ClairvoyancePro\\ClairvoyancePro.csproj",
+      "projectPath": "C:\\projects\\OneFin.core\\ClairvoyancePro.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ClairvoyancePro\\obj\\",
+      "outputPath": "C:\\projects\\OneFin.core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
