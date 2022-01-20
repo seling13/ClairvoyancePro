@@ -21,7 +21,7 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fo
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\bootstrap\fonts\glyphicons-halflings-regular.woff2
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart - Copy.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut.js
-C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut_bak.js
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\chart-donut_old.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\Chart.min.js
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\bower\chart.js\gulpfile.js
@@ -183,6 +183,7 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\skins\ski
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\skins\skin-yellow.min.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\skins\_all-skins.css
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\css\skins\_all-skins.min.css
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\add-user-simple-icon-profile-avatar-sign-vector-20179288.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\avatar.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\avatar04.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\avatar2.png
@@ -199,6 +200,8 @@ C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\pa
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\paypal2.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\credit\visa.png
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\default-50x50.gif
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\default-profile-picture-png-transparent-png.png
+C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\emily-blunt-attends-to-dust-new-york-screening-at-the-jcc-news-photo-1581508577.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\exponential.jpg
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\favicon.ico
 C:\projects\OneFin.core\obj\Release\net5.0\PubTmp\Out\wwwroot\dist\img\faviconLarge.ico

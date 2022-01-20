@@ -6,21 +6,20 @@
 }
 
 
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <style>
- /* Apple Tab */
+        /* Apple Tab */
 
-        .tab-ap 
-        {
-            margin-top: 10px;
-            margin-left: 10px;
-            padding: 2px 2px 2px 2px;
-            overflow: hidden;
+        .tab-ap {
+            padding: 2px 2px 4px 3px;
             background-color: var(--applegrey);
             border-radius: 10px;
             width: -webkit-fit-content;
+            
         }
 
             .tab-ap button {
@@ -30,180 +29,277 @@
                 outline: none;
                 cursor: pointer;
                 transition: 0.3s;
-                min-width: 145px;
-                min-height: 25px;
-                font-size: 12px;
+                min-width: 60px;
+                min-height: 30px;
+                font-size: 14px;
+                padding:0!important;
+                margin:1px 1px 1px -4px;
+                
+               
             }
 
-            /* Change background color of buttons on hover */
-            .tab-ap button:hover {
-                background-color: #ddd;
-            }
+             .tab-ap span {
+                 color: #ccc!important;
+             }
 
-            /* Create an active/current tablink class */
+                /* Change background color of buttons on hover */
+                .tab-ap button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current tablink class */
                 .tab-ap button.active-selected {
                     background-color: white;
                     border-color: none;
                     color: black;
                     border-radius: 10px;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    font-weight: 600px;
                 }
 
 
-/* Add animation (fade in the popup) */
-@@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+        /* Add animation (fade in the popup) */
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
 
-@@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
-/*datepicker*/
-        input[type="date"]::-webkit-calendar-picker-indicator {
-            background-image: url('');
-          
+            to {
+                opacity: 1;
+            }
         }
 
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /*datepicker*/
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background-image: url('');
+            
+        }
+
+        .btn-lvl {
+            font-size: 16px;
+            font-weight: 300!important;
+            min-width: 100px;
+        }
     </style>
 
 </head>
 <body>
-    <section class="content-header" id="headerpanel">
-        <h1 style="font-size:43px">
+    <section class="content-header" style="padding-top:35px">
+        <h1 style="font-size:35px">
             <strong>Search</strong>
         </h1>
- 
     </section>
-        <section class="content container-fluid">
-            <div id="overlay" style="display: none">
-                <div id="loader"></div>
+    <section class="content container-fluid">
+         <div id="overlay" style="display: none">
+         <div id="loader"></div>
+     </div>
+
+        <form id="_form">
+        <div style="position:relative;border:0;padding:0;margin:0;">
+            <div class="select-dp">
+                <select class="form-control form-dp-cp" id="select" style="padding-left:10px; border:none">
+                    <option value="">Search</option>
+                    <option value="ID">ID Number</option>
+                    <option value="Name">Name</option>
+                </select>
+                            
+                <input class="form-control" style="padding-left: 120px; background-color: #EEEEEF; border:none;" type="text" placeholder="Leave Blank to Search All, Search Function is open to - ID Number, Name" id="id" name="id">
+            </div>  
+        </div>
+
+
+            <div class="box-header">
+
+                    <div class="row-cp" style="padding-top: 15px; padding-right:15px; width: 400px; float:left">
+                        <div class="col-sm-4 nopadding">Search From</div>
+                        <div class="col-sm-8  ">
+                            <div class="field-wrp">
+                                <div class="btn-wrp">
+                                    <input id="txtSearch" style="display: flex; align-items: center; background-color:transparent; width:220px;" class="form-control" type="date"  />
+                                </div>
+                                <button class="btn-icon"><span class="far fa-calendar-alt"></span></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row-cp" style="padding-top: 15px; padding-right: 15px; width: 400px; float: left ">
+                        <div class="col-sm-4 nopadding">Search Until</div>
+                        <div class="col-sm-8 ">
+                            <div class="field-wrp">
+                                <div class="btn-wrp">
+                                    <input id="txtSearch" style="display: flex; align-items: center; background-color: transparent; width: 220px; " class="form-control" type="date" />
+                                </div>
+                                <button class="btn-icon"><span class="far fa-calendar-alt"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+ 
+            <div class="border-bottom-cp">
+                <h4><strong>History</strong></h4>
             </div>
-
-
-            <form id="_form">
-                <div style="position:relative;border:0;padding:0;margin:0;">
-                    <select class="form-control form-search-cp" id="select" style="padding-left:10px;">
-                        <option value="">Search</option>
-                        <option value="ID">ID Number</option>
-                        <option value="Name">Name</option>
-                    </select>
-                    <input class="form-control" style="padding-left: 90px; background-color: #EEEEEF" type="text" placeholder="Leave Blank to Search All, Search Function is open to - ID Number, Name" id="id" name="id">
+            <div class="box-header">
+                <div id="DIV-LVL" style="margin-top:10px; width: -webkit-fit-content; float:left ">
+                    <button class="btn-rounded btn-lvl active-btn-selected" hidden> </button>
+                    <button class="btn-rounded btn-lvl"> RD </button>
+                    <button class="btn-rounded btn-lvl"> RR </button>
+                    <button class="btn-rounded btn-lvl"> RA </button>
+                    <button class="btn-rounded btn-lvl"> Override </button>
+                    <button class="btn-rounded btn-lvl"> Manual CIF Matching </button>
+                    <!--<button class="btn1 btn-rounded"><i class="far fa-user-circle-o"></i> Biometric</button>-->
                 </div>
+            <div class="select-simple" style="width:140px;  float:right; margin:20px 0 0 20px;   ">
+                <select class="form-control field-full" style="border:none; color: grey; font-size:17px;">
+                <option value="">Sort By</option>
+                <option value="1">Date</option>
+                <option value="2">Fail</option>
+                <option value="3">Override</option>
+                <option value="4">Incomplete </option>
+                </select>
+            </div>
+            </div>
+            <script>
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("DIV-LVL");
+                var btns = header.getElementsByClassName("btn-lvl");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active-btn-selected");
+                        current[0].className = current[0].className.replace(" active-btn-selected", "");
+                        this.className += " active-btn-selected";
+                         $('#JAN').html("");
+                         $('#JAN').html("");
+                         $('#JAN').html("");
+                         
 
-
-                <div class="box-header">
-                    <div class="col-sm-4 nopadding">
-                        <div class="row-cp" style="padding-top:15px; padding-right:15px">
-                            <div class="col-sm-4 nopadding">Search From</div>
-                            <div class="col-sm-8  ">
-                                <div class="field-wrp">
-                                    <div class="btn-wrp">
-                                        <input id="txtSearch" style="display: flex; align-items: center; background-color:transparent" class="form-control" type="date" />
-                                    </div>
-                                    <button class="btn-icon"><span class="fa fa-calendar"></span></button>
-                                </div>
-                               
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 nopadding">
-                        <div class="row-cp" style="padding-top:15px; padding-right:15px;">
-                            <div class="col-sm-4 nopadding">Search Until</div>
-                            <div class="col-sm-8 ">
-                                <div class="field-wrp">
-                                    <div class="btn-wrp">
-                                        <input id="txtSearch" style="display: flex; align-items: center; background-color:transparent" class="form-control" type="date" />
-                                    </div>
-                                    <button class="btn-icon"><span class="fa fa-calendar"></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="border-bottom-cp">
-                    <h4><strong>History</strong></h4>
-                </div>
-
-                <div class="box-header">
-                    <div id="DIV-LVL" style="margin-top:10px;">
-                        <button class="btn-lvl btn-rounded active-btn-selected" hidden> </button>
-                        <button class="btn-lvl btn-rounded"> Level 1</button>
-                        <button class="btn-lvl btn-rounded"> Level 2</button>
-                        <button class="btn-lvl btn-rounded"> Level 3</button>
-                        <button class="btn-lvl btn-rounded"> Level 4</button>
-                        <button class="btn-lvl btn-rounded"> Quant</button>
-                        <button class="btn-lvl btn-rounded"> Ultron Pro</button>
-                        <!--<button class="btn1 btn-rounded"><i class="fa fa-user-circle-o"></i> Biometric</button>-->
-                    </div>
-                </div>
-                <script>
-                    // Add active class to the current button (highlight it)
-                    var header = document.getElementById("DIV-LVL");
-                    var btns = header.getElementsByClassName("btn-lvl");
-                    for (var i = 0; i < btns.length; i++) {
-                        btns[i].addEventListener("click", function () {
-                            var current = document.getElementsByClassName("active-btn-selected");
-                            current[0].className = current[0].className.replace(" active-btn-selected", "");
-                            this.className += " active-btn-selected";
-                            if (this.innerText == "Level 1") {
-                                if ($('#id').val() != "" && $('#select').val() == "") {
-                                    //myPopup("Please select Type", true);
-
-                                    $('#7days').html("");;
-                                }
+                
+                            if ($('#id').val() == "" || ( $('#id').val() != "" && $('#select').val() != "" ) ) 
+                            {                               
+                                if (this.innerText == "Manual CIF Matching") {}
                                 else {
-                                    //myPopup("", false);
-                                    GeteKYC();
-                                }
-                            }
-                            else {
-                                $("#7days").html("");
+                                GeteKYC(this.innerText);}
                             }
 
-                        });
+                    });
 
-                    }
-                </script>
-            </form>
-            <div class="tab-ap" >
-                <button id="default7days" class="tablinks" onclick="openPeriod(event, '7days')">7 Days</button>
-                <button class="tablinks" onclick="openPeriod(event, '14Days')">14 days</button>
-                <button class="tablinks" onclick="openPeriod(event, '21days')">21 days</button>
-                <button class="tablinks" onclick="openPeriod(event, '21daysmore')">> 21 days</button>
+                }
+            </script>
+        </form>
+        <div class="row">
+        <div class="tab-ap" style="margin:25px 0 30px 25px; float:left;">
+            <button id="defaultJAN" class="tablinks" onclick="openPeriod(event, 'JAN')" style="margin-left:0px;">JAN</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'FEB')">FEB</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'MAR')">MAR</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'APR')">APR</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'MAY')">MAY</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'JUN')">JUN</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'JUL')">JUL</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'AUG')">AUG</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'SEP')">SEP</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'OCT')">OCT</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'NOV')">NOV</button><span>&#124;</span>
+            <button class="tablinks" onclick="openPeriod(event, 'DEC')">DEC</button>
+        </div>
+ 
+             <div class="select-simple" style="width:88px;  float:left; margin:20px 0 0 20px;">
+                <select class="form-control field-full" style="border:1px solid #ccc; color: grey; font-size:17px;">
+                <!--option value="">Year</option>-->
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                </select>
+            </div>
+          
+        </div>
+        <div class="box-body" style="margin-top:20px">
+            <div id="JAN" class="tabcontent animate-bottom">
 
             </div>
-
-            <div class="box-body">
-                <div id="7days" class="tabcontent animate-bottom">
-
-                </div>
-                <div id="14Days" class="tabcontent animate-bottom">
-                    <div class="box-header with-border">
-                        <i class="fa fa-wrench"></i> Under Contrustion
-                    </div>
-                </div>
-
-                <div id="21days" class="tabcontent animate-bottom">
-                    <div class="box-header with-border">
-                        <i class="fa fa-wrench"></i> Under Contrustion
-                    </div>
-
-                </div>
-                <div id="21daysmore" class="tabcontent animate-bottom">
-                    <div class="box-header with-border">
-                        <i class="fa fa-wrench"></i> Under Contrustion
-                    </div>
+            <div id="FEB" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion FEB
                 </div>
             </div>
 
-        </section>
+            <div id="MAR" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion MAR
+                </div>
+
+            </div>
+            <div id="APR" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion APR
+                </div>
+            </div>
+            <div id="MAY" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion MAY
+                </div>
+            </div>
+            <div id="JUN" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion JUN
+                </div>
+            </div>
+            <div id="JUL" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion JUL
+                </div>
+            </div>
+
+            <div id="AUG" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion AUG
+                </div>
+            </div>
+            <div id="SEP" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion SEP
+                </div>
+            </div>
+            <div id="OCT" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion OCT
+                </div>
+            </div>
+            <div id="NOV" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion NOV
+                </div>
+            </div>  
+            <div id="DEC" class="tabcontent animate-bottom">
+                <div class="box-header with-border">
+                    <i class="far fa-wrench"></i> Under Contrustion DEC
+                </div>
+            </div>           
+            
+        </div>
+
+    </section>
 </body>
 </html>
 <script>
+
     $('#nav-link').attr("href", "eKYCSearch")
     $('#nav-name').text("e-KYC");
 
@@ -223,8 +319,25 @@
     });
 
     $(document).ready(function () {
-        document.getElementById('default7days').click();
-    
+        document.getElementById('defaultJAN').click();
+        if('@ViewBag.NavItem' == 'Quant')
+        {
+            var element = document.getElementById("eKYCSearch-Quant");
+            element.classList.add("menu-item-active");
+        }
+              if('@ViewBag.NavItem' == 'Exp')
+        {
+            var element = document.getElementById("eKYCSearch-Exp");
+            element.classList.add("menu-item-active");
+        }
+                if('@ViewBag.NavItem' == 'Ultron')
+        {
+            var element = document.getElementById("eKYCSearch-Ultron");
+            element.classList.add("menu-item-active");
+        }
+
+
+
     });
 
 
@@ -244,18 +357,19 @@
     }
 
     function GeteKYC() {
-        loader("ON");
+        //loader("ON");
         $.ajax(
             {
                 type: "POST",
                 url: '@Url.Action("eKYCSearchList", "eKYC")',
                 data: {
-                    Name: $('#id').val()
+                    Name: $('#id').val(),
+                    NavItem: '@ViewBag.NavItem'
                 },
                 error: function (result) {
                     showMessage("E", result.status + " " + result.statusText + " " + "Something wrong, please try again"
                     );
-                    $('#7days').html("");
+                    $('#JAN').html("");
                 },
                 success: function (result) {
                         if (result.status == false) {
@@ -270,11 +384,24 @@
                                 list_html += result;
                             }
                             //$("#7days").html(list_html);
-                            $("#7days").html(result);
+                            $("#JAN").html(result);
                         }
-                    loader("OFF");
+                    //loader("OFF");
                 }
             }
         );
+    }
+
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("main-header-panel").style.top = "0";
+
+        } else {
+            document.getElementById("main-header-panel").style.top = "-55px";
+        }
+        prevScrollpos = currentScrollPos;
     }
 </script>

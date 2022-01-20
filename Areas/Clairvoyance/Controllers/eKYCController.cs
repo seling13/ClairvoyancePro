@@ -11,40 +11,58 @@ namespace OneFin.Areas.Clairvoyance.Controllers
     [Area("Clairvoyance")]
     public class eKYCController : Controller
     {
-        public IActionResult eKYCSearch()
+        public IActionResult eKYCSearch(string NavItem)
         {
+            ViewBag.NavItem = NavItem;
             return View();
         }
 
-        public IActionResult eKYCSearchList(string Name)
+        public IActionResult eKYCSearchList(string Name, string NavItem)
         {
-            List<CFCustomer> custlist = new List<CFCustomer>();
 
-                var cust1 = new CFCustomer { Name = "John Wick", IMGSource = "/sampleimg/John Wick.jpg",Cifno="000000000001" };
-                var cust2 = new CFCustomer { Name = "Datin Leng", IMGSource = "/sampleimg/Datin Leng.jpg", Cifno = "000000000002" };
-                var cust3 = new CFCustomer { Name = "John Doe", IMGSource = "/sampleimg/Unknown.jpg", Cifno = "000000000003" };
-                var cust = new CFCustomer { Name = "Jason Lee Micheal", IMGSource = "/sampleimg/Jason Lee.jpg", Cifno = "000000000004" };
-                custlist.Add(cust1);
-                custlist.Add(cust2);
-                custlist.Add(cust3);
-                custlist.Add(cust);
-          
-            if( Name !=null && Name !="")
+            List<SearcheKYCResult> searchekycresults = new List<SearcheKYCResult>();
+            {
+                var cust5 = new SearcheKYCResult { NA03_cifName = "Deana Lis Chang Chin", IM03_avatarImageURL = "/sampleimg/John Wick.jpg",CF01_CFIndex="000000000001",LK03_countPass = "5", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000001" };
+                var cust8 = new SearcheKYCResult { NA03_cifName = "Datin Leng Sui Sui ", IM03_avatarImageURL = "/sampleimg/Datin Leng.jpg", CF01_CFIndex = "000000000002",LK03_countPass = "5", LK04_countFail="12",LK05_countForceOverride="1",LK15_countIncompleteData="0",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000002" };
+                var cust6 = new SearcheKYCResult { NA03_cifName = "John Doe Re Mi", IM03_avatarImageURL = "/sampleimg/Unknown.jpg", CF01_CFIndex = "000000000003",LK03_countPass = "4", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="0",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000003" };
+                var cust9 = new SearcheKYCResult { NA03_cifName = "Jason Joseph Micheal", IM03_avatarImageURL = "/sampleimg/Jason Lee.jpg", CF01_CFIndex = "000000000004",LK03_countPass = "5", LK04_countFail="5",LK05_countForceOverride="1",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000004" };
+                var cust2 = new SearcheKYCResult { NA03_cifName = "Aman Ali Admad", IM03_avatarImageURL = "/dist/img/user8-128x128.jpg", CF01_CFIndex = "000000000005",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="2",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000005" };
+                var cust4 = new SearcheKYCResult { NA03_cifName = "Arron Kwok Foo Sheng Sheng Sheng", IM03_avatarImageURL = "/dist/img/user1-128x128.jpg", CF01_CFIndex = "000000000006",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="5",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000006" };
+                var cust7 = new SearcheKYCResult { NA03_cifName = "Happy Chin Chin", IM03_avatarImageURL = "/dist/img/user7-128x128.jpg", CF01_CFIndex = "000000000007",LK03_countPass = "5", LK04_countFail="9",LK05_countForceOverride="1",LK15_countIncompleteData="3",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000007"};
+                var cust3 = new SearcheKYCResult { NA03_cifName = "Wong Lee Hong", IM03_avatarImageURL = "/dist/img/user6-128x128.jpg", CF01_CFIndex = "000000000008",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="2",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000008" };
+                var cust1 = new SearcheKYCResult { NA03_cifName = "Emily Oliva Blunt", IM03_avatarImageURL = "/dist/img/emily-blunt-attends-to-dust-new-york-screening-at-the-jcc-news-photo-1581508577.jpg", CF01_CFIndex = "000000000009",LK03_countPass = "1", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000009" };
+
+
+            searchekycresults.Add(cust1);
+            searchekycresults.Add(cust2);
+            searchekycresults.Add(cust3);
+            searchekycresults.Add(cust4);
+            searchekycresults.Add(cust5);
+            searchekycresults.Add(cust6);
+            searchekycresults.Add(cust7);
+            searchekycresults.Add(cust8);
+            searchekycresults.Add(cust9);
+
+            }
+               
+
+
+            if ( Name !=null && Name !="")
             {
 
 
-                custlist = custlist.Where(item => item.Name.ToLower().Contains(Name.ToLower())).ToList();
+                searchekycresults = searchekycresults.Where(item => item.NA03_cifName.ToLower().Contains(Name.ToLower())).ToList();
 
 
             }
+            ViewBag.NavItem = NavItem;
 
-
-            if (custlist.Count == 0)
+            if (searchekycresults.Count == 0)
             {
                 return Json(new { status = false, message = "Record Not Found" });
             }
             else
-             return PartialView(custlist);
+             return PartialView(searchekycresults);
         }
 
         public IActionResult eKYCDetailList(string filter, string type, string ekycvalidate)
@@ -80,10 +98,60 @@ namespace OneFin.Areas.Clairvoyance.Controllers
 
         }
 
-        public IActionResult eKYCDetail(string id)
+
+        public IActionResult eKYCDetail14300()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail14500()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail15300()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail15500()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail16500()
+        {
+            return View();
+
+        }
+
+        public IActionResult eKYCDetail16300()
+        {
+            return View();
+
+        }
+
+        public IActionResult eKYCDetail14200()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail15200()
+        {
+            return View();
+
+        }
+        public IActionResult eKYCDetail16200()
+        {
+            return View();
+
+        }
+
+        public IActionResult eKYCDetail(string id, string NavItem)
         {
             /*Display Customer Master*/
             var cust = new CFCustomer();
+
             List<CFAddress> cfaddresslist = new List<CFAddress>();
             List<CFPhone> cfphonelist = new List<CFPhone>();
             List<CFEmail> cfemaillist = new List<CFEmail>();
@@ -101,40 +169,51 @@ namespace OneFin.Areas.Clairvoyance.Controllers
 
             if (id == "000000000001")
             {
-                cust = new CFCustomer { Name = "John Wick", IMGSource = "/sampleimg/John Wick.jpg", Cifno = "000000000001", PrimaryIDno = ""};
+                cust = new CFCustomer { };
             }
             if (id == "000000000002")
-                cust = new CFCustomer { Name = "Datin Leng", IMGSource = "/sampleimg/Datin Leng.jpg", Cifno = "000000000002", PrimaryIDno = ""};
+                cust = new CFCustomer { NA03_cifName = "Datin Leng Sui Sui ", IM03_avatarImageURL = "/sampleimg/Datin Leng.jpg", CF01_CFIndex = "000000000002",LK03_countPass = "5", LK04_countFail="12",LK05_countForceOverride="1",LK15_countIncompleteData="0",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000002"};
             if (id == "000000000003")
-                cust = new CFCustomer { Name = "John Doe", IMGSource = "/sampleimg/Unknown.jpg", Cifno = "000000000003", PrimaryIDno = "" };
+                cust = new CFCustomer {NA03_cifName = "John Doe Re Mi", IM03_avatarImageURL = "/sampleimg/Unknown.jpg", CF01_CFIndex = "000000000003",LK03_countPass = "4", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="0",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000003"};
             if (id == "000000000004")
-                cust = new CFCustomer { Name = "Jason Lee Micheal ", IMGSource = "/sampleimg/Jason Lee.jpg", Cifno = "000000000003", PrimaryIDno = "" };
+                cust = new CFCustomer {NA03_cifName = "Jason Joseph Micheal", IM03_avatarImageURL = "/sampleimg/Jason Lee.jpg", CF01_CFIndex = "000000000004",LK03_countPass = "5", LK04_countFail="5",LK05_countForceOverride="1",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000004" };
+            if (id == "000000000005")
+                cust = new CFCustomer { NA03_cifName = "Aman Ali Admad", IM03_avatarImageURL = "/dist/img/user8-128x128.jpg", CF01_CFIndex = "000000000005",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="2",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000005"};
+            if (id == "000000000006")
+                cust = new CFCustomer {NA03_cifName = "Arron Kwok Foo Sheng Sheng Sheng", IM03_avatarImageURL = "/dist/img/user1-128x128.jpg", CF01_CFIndex = "000000000006",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="5",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000006" };
+            if (id == "000000000007")
+                cust = new CFCustomer {  NA03_cifName = "Happy Chin Chin", IM03_avatarImageURL = "/dist/img/user7-128x128.jpg", CF01_CFIndex = "000000000007",LK03_countPass = "5", LK04_countFail="9",LK05_countForceOverride="1",LK15_countIncompleteData="3",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000007"};
+            if (id == "000000000008")
+                cust = new CFCustomer { NA03_cifName = "Wong Lee Hong", IM03_avatarImageURL = "/dist/img/user6-128x128.jpg", CF01_CFIndex = "000000000008",LK03_countPass = "15", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="2",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000008" };
+            if (id == "000000000009")
+                cust = new CFCustomer { NA03_cifName = "Emily Oliva Blunt", IM03_avatarImageURL = "/dist/img/emily-blunt-attends-to-dust-new-york-screening-at-the-jcc-news-photo-1581508577.jpg", CF01_CFIndex = "000000000009",LK03_countPass = "1", LK04_countFail="10",LK05_countForceOverride="1",LK15_countIncompleteData="1",LK17_finalBlazeRecommendation="RR",LK18_finalStatus="Override",BM02_lkIndex="000000000009"  };
+
 
             /*Mock Address*/
-            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "MATA-MATA", TP05_jalan_FPJC = "1", TP06_simpang_FPSM = "24", TP07_block = "", TP08_unit = "", TP09_postalCode_FPPK = "TC1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "", TP13_building_FPBG = "BANGUNAN PERSEKUTUAN PENGAKAP", RegHist = "2" });
-            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "SENGKARAI", TP05_jalan_FPJC = "22", TP06_simpang_FPSM = "", TP07_block = "12", TP08_unit = "3", TP09_postalCode_FPPK = "TC1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "789", TP13_building_FPBG = "" , RegHist = "1" });
-            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "KAYANGAN", TP05_jalan_FPJC = "3", TP06_simpang_FPSM = "1", TP07_block = "", TP08_unit = "", TP09_postalCode_FPPK = "BA1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "", TP13_building_FPBG = "",RegHist="1" });
+            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "MATA-MATA", TP05_jalan_FPJC = "1", TP06_simpang_FPSM = "24", TP07_block = "NULL", TP08_unit = "NULL", TP09_postalCode_FPPK = "TC1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "NULL", TP13_building_FPBG = "BANGUNAN PERSEKUTUAN PENGAKAP", RegHist = "2" });
+            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "SENGKARAI", TP05_jalan_FPJC = "22", TP06_simpang_FPSM = "NULL", TP07_block = "12", TP08_unit = "3", TP09_postalCode_FPPK = "TC1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "789", TP13_building_FPBG = "NULL", RegHist = "1" });
+            cfaddresslist.Add(new CFAddress { TP04_kampong_FPKC = "KAYANGAN", TP05_jalan_FPJC = "3", TP06_simpang_FPSM = "1", TP07_block = "NULL", TP08_unit = "NULL", TP09_postalCode_FPPK = "BA1234", TP10_district_FPDK = "TUTONG", TP11_mukim = "TUTONG", TP12_lot_FPLT = "NULL", TP13_building_FPBG = "NULL", RegHist="1" });
             cust.AddContentList.AddRange(cfaddresslist);
 
-            cfphonelist.Add(new CFPhone { PH03_phoneNumber= "45454545",PH04_phoneType_FPTL= "HOME", PH05_source="MIBS", PH06_startDate="05-JUL-21 ",PH07_EndDate="", PH87_userID="TESTING USER", PH88_lastUpdate="05-JUL-21 ", RegHist="2",OTPHist= "0" });
-            cfphonelist.Add(new CFPhone { PH03_phoneNumber = "8785628", PH04_phoneType_FPTL = "MOBILE", PH05_source = "CREDIT BUREAU", PH06_startDate = "10-JUL-21 ", PH07_EndDate = "", PH87_userID = "TESTING USER", PH88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
+            cfphonelist.Add(new CFPhone { PH03_phoneNumber= "45454545",PH04_phoneType_FPTL= "HOME", PH05_source="MIBS", PH06_startDate="05-JUL-21 ",PH07_EndDate="-", PH87_userID="TESTUSER", PH88_lastUpdate="05-JUL-21 ", RegHist="2",OTPHist= "0" });
+            cfphonelist.Add(new CFPhone { PH03_phoneNumber = "8785628", PH04_phoneType_FPTL = "MOBILE", PH05_source = "CREDIT BUREAU", PH06_startDate = "10-JUL-21 ", PH07_EndDate = "-", PH87_userID = "TESTUSER", PH88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
             cust.PhoneContentList.AddRange(cfphonelist);
             /*Mock Contact*/
 
-            cfemaillist.Add(new CFEmail { EM03_emailAddress = "james@gmail.com", EM06_source = "MIBS", EM04_startDate = "05-JUL-21 ", EM05_endDate = "", EM87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3"  });
-            cfemaillist.Add(new CFEmail { EM03_emailAddress = "jameslee@gmail.com", EM06_source = "MOBILE",  EM04_startDate = "10-JUL-21 ", EM05_endDate = "", PH87_userID = "TESTING USER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
+            cfemaillist.Add(new CFEmail { EM03_emailAddress = "james@gmail.com", EM06_source = "MIBS", EM04_startDate = "05-JUL-21 ", EM05_endDate = "-", EM87_userID = "TESTUSER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3"  });
+            cfemaillist.Add(new CFEmail { EM03_emailAddress = "jameslee@gmail.com", EM06_source = "MOBILE",  EM04_startDate = "10-JUL-21 ", EM05_endDate = "-", PH87_userID = "TESTUSER", EM88_lastUpdate = "05-JUL-21 ", RegHist = "1", OTPHist = "3" });
             cust.EmailContentList.AddRange(cfemaillist);
 
-            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "james@gmail.com", SM03_socialMediaType_FKXX = "INSTAGRAM", SM05_startDate = "05-JUL-21 ", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 " });
-            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "jameslee@gmail.com", SM03_socialMediaType_FKXX = "LINKEIN", SM05_startDate = "10-JUL-21 ", SM06_endDate = "", SM87_userID = "TESTING USER", lastUpdateDate = "05-JUL-21 " });
+            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "james@gmail.com", SM03_socialMediaType_FKXX = "INSTAGRAM", SM05_startDate = "05-JUL-21 ", SM06_endDate = "-", SM87_userID = "TESTUSER", lastUpdateDate = "05-JUL-21 " });
+            cfsocialmedialist.Add(new CFSocialMedia { SM04_socialMediaUserID = "jameslee@gmail.com", SM03_socialMediaType_FKXX = "LINKEIN", SM05_startDate = "10-JUL-21 ", SM06_endDate = "-", SM87_userID = "TESTUSER", lastUpdateDate = "05-JUL-21 " });
             cust.SocialMediaContentList.AddRange(cfsocialmedialist);
 
-            cfemploymentcivilianpublicsectorlist.Add(new CFEmploymentCivilianPublicSector { CS03_ministryCode_FPMT= "45454545", CS04_startDate= "05-JUL-21 ", CS05_endDate="",CS87_updatedBy= "TESTING USER", CS88_lastModifiedDate= "05-JUL-21 " });
-            cfemploymentuniformpublicsectorlist.Add(new CFEmploymentUniformPublicSector { US03_UniformCode_FPUF = "1166111", US04_StartDate = "05-JUL-21 ", US05_EndDate = "", US87_UserID = "TESTING USER", US88_UpdateDate = "05-JUL-21 " });
-            cfemploymentsemigovernmentsectorlist.Add(new CFEmploymentSemiGovernmentSector { SS03_semiGovernment = "WaterBoard", SS04_startDate = "05-JUL-21 ",  SS05_endDate= "", SS87_userID = "TESTING USER",  SS88_updateDate= "05-JUL-21 " });
-            cfemploymentprivatesectolist.Add(new CFEmploymentPrivateSector { PS03_privateCompany = "Super 888 Company", PS04_startDate = "05-JUL-21 ", PS05_endDate = "", PS87_userID = "TESTING USER", PS88_updateDate = "05-JUL-21 " });
-            cfemploymentselfemployedlist.Add(new CFEmploymentSelfEmployed { BH04_companyName_FPPV = "ANT Company", BH05_businessStartDate = "05-JUL-20 ", BH06_businessEndDate = "", BH87_UserID = "TESTING USER", BH88_UpdateDate = "05-JUL-21 " });
-            cfunemployed.Add(new CFUnemployed { UH03_unemploymentType_FPUT = "Housewife", UH04_StartDate = "05-JUL-19 ", UH05_EndDate = "", UH87_UserID = "TESTING USER", UH88_UpdateDate = "05-JUL-21 " });
+            cfemploymentcivilianpublicsectorlist.Add(new CFEmploymentCivilianPublicSector { CS03_ministryCode_FPMT= "45454545", CS04_startDate= "05-JUL-21 ", CS05_endDate="-",CS87_updatedBy= "TESTUSER", CS88_lastModifiedDate= "05-JUL-21 " });
+            cfemploymentuniformpublicsectorlist.Add(new CFEmploymentUniformPublicSector { US03_UniformCode_FPUF = "1166111", US04_StartDate = "05-JUL-21 ", US05_EndDate = "-", US87_UserID = "TESTUSER", US88_UpdateDate = "05-JUL-21 " });
+            cfemploymentsemigovernmentsectorlist.Add(new CFEmploymentSemiGovernmentSector { SS03_semiGovernment = "WaterBoard", SS04_startDate = "05-JUL-21 ",  SS05_endDate= "-", SS87_userID = "TESTUSER",  SS88_updateDate= "05-JUL-21 " });
+            cfemploymentprivatesectolist.Add(new CFEmploymentPrivateSector { PS03_privateCompany = "Super 888 Company", PS04_startDate = "05-JUL-21 ", PS05_endDate = "-", PS87_userID = "TESTUSER", PS88_updateDate = "05-JUL-21 " });
+            cfemploymentselfemployedlist.Add(new CFEmploymentSelfEmployed { BH04_companyName_FPPV = "ANT Company", BH05_businessStartDate = "05-JUL-20 ", BH06_businessEndDate = "-", BH87_UserID = "TESTUSER", BH88_UpdateDate = "05-JUL-21 " });
+            cfunemployed.Add(new CFUnemployed { UH03_unemploymentType_FPUT = "Housewife", UH04_StartDate = "05-JUL-19 ", UH05_EndDate = "-", UH87_UserID = "TESTUSER", UH88_UpdateDate = "05-JUL-21 " });
 
 
             cust.EmploymentCivilianPublicSectorContentList.AddRange(cfemploymentcivilianpublicsectorlist);
@@ -153,8 +232,8 @@ namespace OneFin.Areas.Clairvoyance.Controllers
             cfyincome.Add(new CFYIncome { AI05_incomeCat_FPSU = "Employment", AI04_YYYY = "2020", AI03_annualIncome = "$1,000,000" });
             cust.YIncomeContentList.AddRange(cfyincome);
 
-            //cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName= "MARJINA",SU05_relationshipType_FPRE= "SPOUSE",SU06_relationshipStatus="Valid", SU07_startDate= "05-JUL-19 ", SU08_endDate="", SU87_updatedBy="RIHINAH",SU88_lastModifiedDate="" });
-            cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName = "THIRD CHILD BIN MD ARNEY FAIZUL", SU05_relationshipType_FPRE = "BIOLOGICAL CHILD", SU06_relationshipStatus = "Valid", SU07_startDate = "05-JUL-19 ", SU08_endDate = "", SU87_updatedBy = "TESTING USER", SU88_lastModifiedDate = "05-JUL-21" });
+            //cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName= "MARJINA",SU05_relationshipType_FPRE= "SPOUSE",SU06_relationshipStatus="Valid", SU07_startDate= "05-JUL-19 ", SU08_endDate="-", SU87_updatedBy="RIHINAH",SU88_lastModifiedDate="-" });
+            cfrelationship.Add(new CFRelationship { SU09_relationshipCIFName = "THIRD CHILD BIN MD ARNEY FAIZUL", SU05_relationshipType_FPRE = "BIOLOGICAL CHILD", SU06_relationshipStatus = "Valid", SU07_startDate = "05-JUL-19 ", SU08_endDate = "-", SU87_updatedBy = "TESTUSER", SU88_lastModifiedDate = "05-JUL-21" });
 
 
             cust.RelationshipContentList.AddRange(cfrelationship);
@@ -182,16 +261,16 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA07_expectedVariableAttribute2 = "10.00%",
                 NA08_expectedVariableSource2= "View Source",
                 NA09_expectedVariableName3 = "Profile Image",
-                NA10_expectedVariableAttribute3 = cust.IMGSource,
+                NA10_expectedVariableAttribute3 = cust.IM03_avatarImageURL,
                 //cust.IMGSource,
                 NA11_expectedVariableSource3 = "View Source",
                 NA88_LastModifiedDate = "30-NOV-21",
-                OV03_overrideFlag = "",
-                OV04_overrideRemark = "",
-                OV87_UpdatedBy = "",
-                OV88_LastModifiedDate = "",
+                OV03_overrideFlag = "-",
+                OV04_overrideRemark = "-",
+                OV87_UpdatedBy = "-",
+                OV88_LastModifiedDate = "-",
                 OV05_TP_TN_FP_FN_Flag = "-",
-                OV06_overrideStatus = ""
+                OV06_overrideStatus = "-"
 
             };
             var item2 = new eKYCValidate
@@ -210,15 +289,15 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA07_expectedVariableAttribute2 = "10.00%",
                 NA08_expectedVariableSource2 = "View Source",
                 NA09_expectedVariableName3 = "Profile Image",
-                NA10_expectedVariableAttribute3 = cust.IMGSource,
+                NA10_expectedVariableAttribute3 = cust.IM03_avatarImageURL,
                 NA11_expectedVariableSource3 = "View Source",
                 NA88_LastModifiedDate = "30-NOV-21",
-                OV03_overrideFlag = "",
-                OV04_overrideRemark = "",
-                OV87_UpdatedBy = "",
-                OV88_LastModifiedDate = "",
-                OV05_TP_TN_FP_FN_Flag = "-",
-                OV06_overrideStatus = ""
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "Verified Correct",
+                OV87_UpdatedBy = "Rafhanah",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "FALSE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
 
             };
             var item3 = new eKYCValidate
@@ -237,7 +316,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA07_expectedVariableAttribute2 = "10.00%",
                 NA08_expectedVariableSource2 = "View Source",
                 NA09_expectedVariableName3 = "Profile Image",
-                NA10_expectedVariableAttribute3 = cust.IMGSource,
+                NA10_expectedVariableAttribute3 = cust.IM03_avatarImageURL,
                 NA11_expectedVariableSource3 = "View Source",
                 NA88_LastModifiedDate = "30-NOV-21",
                 OV03_overrideFlag = "YES",
@@ -264,15 +343,15 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA07_expectedVariableAttribute2 = "10.00%",
                 NA08_expectedVariableSource2 = "View Source",
                 NA09_expectedVariableName3 = "Profile Image",
-                NA10_expectedVariableAttribute3 = cust.IMGSource,
+                NA10_expectedVariableAttribute3 = cust.IM03_avatarImageURL,
                 NA11_expectedVariableSource3 = "View Source",
                 NA88_LastModifiedDate = "30-NOV-21",
-                OV03_overrideFlag = "",
-                OV04_overrideRemark = "",
-                OV87_UpdatedBy = "",
-                OV88_LastModifiedDate = "",
-                OV05_TP_TN_FP_FN_Flag = "",
-                OV06_overrideStatus = ""
+                OV03_overrideFlag = "YES",
+                OV04_overrideRemark = "Verified Correct",
+                OV87_UpdatedBy = "Rafhanah",
+                OV88_LastModifiedDate = "30-NOV-21",
+                OV05_TP_TN_FP_FN_Flag = "FALSE NEGATIVE",
+                OV06_overrideStatus = "APPROVED"
 
             };
             ekyclist.Add(item1);
@@ -409,7 +488,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Driving License Issue Date",
                 NA10_expectedVariableAttribute3 = "21-JAN-2020",
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "",
+                NA88_LastModifiedDate = "-",
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
@@ -436,7 +515,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Driving License Issue Date",
                 NA10_expectedVariableAttribute3 = "21-JAN-2020",
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "",
+                NA88_LastModifiedDate = "-",
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
@@ -463,7 +542,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 NA09_expectedVariableName3 = "Driving License Issue Date",
                 NA10_expectedVariableAttribute3 = "21-JAN-2020",
                 NA11_expectedVariableSource3 = "View Source",
-                NA88_LastModifiedDate = "",
+                NA88_LastModifiedDate = "-",
                 OV03_overrideFlag = "YES",
                 OV04_overrideRemark = "Driving License Issue Date Not Match",
                 OV87_UpdatedBy = "RIHANA",
@@ -834,7 +913,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
                 OV06_overrideStatus = "APPROVED"
 
             });
-
+           ViewBag.NavItem = NavItem;
             return View(ekyclist);
         }
 
@@ -953,7 +1032,7 @@ namespace OneFin.Areas.Clairvoyance.Controllers
             return PartialView();
         }
 
-        public IActionResult VueJSSample()
+        public IActionResult Sample()
         {
             return View();
         }

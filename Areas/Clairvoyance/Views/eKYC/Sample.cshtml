@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<style>
+
+
+</style>
+
+<html>
+
+<body>
+    <canvas id="myChart" style="position: absolute; z-index: 3; max-height:130px; max-width:130px;  width:130px!important; height:130px!important;"></canvas>
+
+    <script>
+                    var xValues = ["Pass", "Fail", "Override"];
+                    var yValues = [35, 49, 44];
+                    var barColors = ["#D4F0F0", "#FCB9AA", "#CCE2CB"];
+
+                    new Chart("myChart", {
+                        type: "doughnut",
+                        data: {
+                            labels: xValues,
+                            datasets: [{ backgroundColor: barColors, data: yValues }],
+
+                        },
+                        options: {
+                            cutout:55,
+                            plugins: {
+                                legend: {
+                                    display: false
+                                },
+
+                                title: {
+                                    display: false,
+                                    text: "eKYC Criteria"
+                                },
+                                responsive: false,
+                                maintainAspectRatio: false,
+                                animation: {
+                                    duration: 1000
+                                }
+
+                            }
+
+
+
+                        }
+                    });
+
+    </script>
+</body>
+</html>
